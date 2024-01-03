@@ -504,8 +504,7 @@
     "interval" : 86400, // once every day
     "tooltip": true,
     "on-click": "pkill rofi || rofi -show drun -modi run,drun,filebrowser,window",
-    "on-click-middle": "~/.config/wayfire/scripts/WallpaperSelect.sh",
-    "on-click-right": "~/.config/wayfire/scripts/WaybarLayout.sh",
+    "on-click-right": "~/.config/wayfire/scripts/wallpaper",
 },
 
 // This is a custom cava visualizer
@@ -530,11 +529,9 @@
 
 "custom/power": {
     "format": "⏻ ",
-    "exec": "echo ; echo 󰟡 power // blur",
-	"on-click": "~/.config/wayfire/scripts/Wlogout.sh",
-    "on-click-right": "~/.config/wayfire/scripts/ChangeBlur.sh",
-    "interval" : 86400, // once every day
-    "tooltip": true,
+	"on-click": "archlinux-logout",
+    "on-click-right": "archlinux-logout",
+    "tooltip": false,
 },
 
 "custom/swaync": {
