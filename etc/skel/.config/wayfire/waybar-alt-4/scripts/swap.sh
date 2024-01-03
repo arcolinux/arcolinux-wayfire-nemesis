@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Set the path to the config and style files
-config_file="${HOME}/.config/wayfire/waybar-hyprland-2/config"
-config_background_file="${HOME}/.config/wayfire/waybar-hyprland-2/config-background"
-style_file="${HOME}/.config/wayfire/waybar-hyprland-2/style.css"
-style_background_file="${HOME}/.config/wayfire/waybar-hyprland-2/style-background.css"
+config_file="${HOME}/.config/wayfire/waybar/config"
+config_background_file="${HOME}/.config/wayfire/waybar/config-background"
+style_file="${HOME}/.config/wayfire/waybar/style.css"
+style_background_file="${HOME}/.config/wayfire/waybar/style-background.css"
 
 # Swap names of config files
 mv "${config_file}" "${config_file}.temp"
@@ -18,5 +18,18 @@ mv "${style_file}.temp" "${style_background_file}"
 
 echo "File names swapped successfully!"
 
-pkill waybar
-~/.config/wayfire/scripts/statusbar-hyprland-2 &
+# kill first
+if [[ $(pidof waybar) ]]; then
+	killall -q waybar
+fi
+
+while pgrep -u $UID -x waybar > /dev/null;do sleep 1;done
+ 
+
+# start up again
+CONFIG="$HOME/.config/wayfire/waybar/config.ini"
+STYLE="$HOME/.config/wayfire/waybar/style.css"
+
+if [[ ! $(pidof waybar) ]]; then
+	waybar --bar main-bar --log-level error --config ${CONFIG} --style ${STYLE} &
+fi

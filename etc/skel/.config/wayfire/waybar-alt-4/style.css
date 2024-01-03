@@ -114,6 +114,7 @@ window#waybar {
 
 #clock,
 #custom-swap,
+#custom-changewaybar,
 #custom-cava-internal,
 #battery,
 #cpu,
@@ -179,6 +180,13 @@ window#waybar {
 }
 
 #custom-swap {
+    border-radius: 10px;
+    color: @base;
+    margin-left: 5px;
+    background-color: @mauve;
+}
+
+#custom-changewaybar {
     border-radius: 10px;
     color: @base;
     margin-left: 5px;
@@ -293,9 +301,6 @@ window#waybar {
     border-radius: 10px;
 }
 
-#custom-launcher,
-#custom-power {}
-
 #custom-launcher {
     background-color: @mauve;
     /* background-image: url("/home/lightcrimson/.config/icons/svg/arch.svg");
@@ -304,7 +309,7 @@ window#waybar {
     background-size: contain;  */
     color: @base;
     border-radius: 10px;
-    padding: 5px 10px;
+    padding: 5px 20px;
     margin-left: 15px;
 }
 
@@ -314,7 +319,7 @@ window#waybar {
     border-radius: 10px;
     margin-left: 5px;
     margin-right: 15px;
-    padding: 5px 10px;
+    padding: 5px 20px;
 }
 
 #window {
@@ -342,8 +347,6 @@ window#waybar {
     border-radius: 10px;
     margin-right: 10px;
 }
-
-
 
 /* window#waybar {
     background: #2d2a2e;

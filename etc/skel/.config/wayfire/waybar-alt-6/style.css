@@ -129,7 +129,7 @@ window#waybar.hidden {
 }
 
 /** ********** Custom ********** **/
-#custom-menu, #custom-power, #custom-weather, #custom-updater {
+#custom-menu, #custom-power, #custom-weather, #custom-updater, #custom-changewaybar {
 	border-radius: 4px;
 	margin: 6px 0px;
 	padding: 2px 8px;
@@ -165,6 +165,13 @@ window#waybar.hidden {
 	font-size: 12px;
 }
 
+#custom-changewaybar {
+	background-color: #cba6f7;
+	margin-right: 6px;
+	padding: 2px 8px;
+	font-size: 12px;
+}
+
 /** Common style **/
 #backlight, 
 #battery,
@@ -176,8 +183,9 @@ window#waybar.hidden {
 #mpd,
 #tray,
 #pulseaudio,
-#network {
-  
+#network,
+#custom-changewaybar
+{
   padding: 0 12px;
   margin: 4px 4px 4px 4px;
   border-radius: 90px;

@@ -275,7 +275,7 @@
          }
     },
     "custom/changewaybar": {
-        "on-click": "~/.bin/change-waybar-hyprland",
+        "on-click": "~/.bin/change-waybar-wayfire",
         "tooltip": true,
         "tooltip-format": "Swap between waybar configs",
         "format": "CW "

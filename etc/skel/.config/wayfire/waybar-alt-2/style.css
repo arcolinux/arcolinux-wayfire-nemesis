@@ -53,11 +53,6 @@ window#waybar.hidden {
 	animation-direction: alternate;
 }
 
-/** ********** Clock ********** **/
-#clock {
-	border-bottom: 2px solid #C4A7E7;
-}
-
 /** ********** Sway ********** **/
 #workspaces {
 	background-color: #2F333C;
@@ -317,7 +312,7 @@ window#waybar.empty #window {
 #mpd,
 #pulseaudio,
 #network {
-	background-color: #2D3039;
+	background-color: rgba(12, 12, 12, 0);
 	border-radius: 2px;
 	margin: 6px 0px;
 	padding: 2px 10px;
@@ -335,4 +330,9 @@ window#waybar.empty #window {
 
 #memory {
 	border-bottom: 2px solid #eba0ac;
+}
+
+/** ********** Clock ********** **/
+#clock {
+	border-bottom: 2px solid #C4A7E7;
 }
