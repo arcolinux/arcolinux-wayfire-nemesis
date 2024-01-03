@@ -273,11 +273,5 @@
              "focused": "",
              "default": ""
          }
-    },
-    "custom/changewaybar": {
-        "on-click": "~/.bin/change-waybar-hyprland",
-        "tooltip": true,
-        "tooltip-format": "Swap between waybar configs",
-        "format": "CW "
-    },
+    }
 }
