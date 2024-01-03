@@ -2,15 +2,15 @@
 /* ....Chroma Fusion Edge .... */
 /* Pywal & Catppuccin - Bordered */
 
-@define-color white         #F2F2F2;
-@define-color black         #000000;
-@define-color text          #FFFFFF;
-@define-color lightgray     #686868;
-@define-color darkgray      #353535;
+@define-color white      	#F2F2F2;
+@define-color black      	#000000;
+@define-color text       	#FFFFFF;
+@define-color lightgray  	#686868;
+@define-color darkgray   	#353535;
 
-@define-color transparent   rgba(0, 0, 0, 0.25);
-@define-color teal-trans    rgba(1, 117, 84, 0.5);
-@define-color cyan          rgba(53, 140, 169, 1);
+@define-color transparent	rgba(0, 0, 0, 0.25);
+@define-color teal-trans	rgba(1, 117, 84, 0.5);
+@define-color cyan			rgba(53, 140, 169, 1);
 
 @define-color background-module     @transparent;
 @define-color border-color          @color2;
@@ -20,24 +20,24 @@
 @import "../waybar/style/catppuccin-themes/latte.css";
 
 * {
-    font-family: "JetBrains Mono Nerd Font";
-    font-weight: bold;
-    min-height: 0;  
-    /* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
-    font-size: 100%;
-    font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+	font-family: "JetBrains Mono Nerd Font";
+	font-weight: bold;
+	min-height: 0;	
+	/* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
+	font-size: 97%;
+	font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
 
 }
 
 window#waybar {
-    background: linear-gradient(0deg, @border-color, black);
-    /*background: rgba(1, 117, 84, 0.5);*/
-    /*background: @transparent;*/
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-
+	background: linear-gradient(0deg, @border-color, black);
+	/*background: rgba(1, 117, 84, 0.5);*/
+	/*background: @transparent;*/
+	border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border:2px solid black;
 }
 
 window#waybar.empty #window {    
@@ -89,7 +89,7 @@ window#waybar.empty #window {
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
 #custom-weather.sunnyDay {
-    background-color: @background-module;
+	background-color: @background-module;
     border-radius: 25px;
     padding: 0px 10px 0px 10px;
     margin: 5px 5px 5px 5px;
@@ -103,7 +103,7 @@ window#waybar.empty #window {
     opacity:1.0;
 }
 #backlight {
-    padding: 0px 2px 0px 6px;
+	padding: 0px 2px 0px 6px;
 }
 #custom-light_dark,
 #custom-menu{
@@ -119,7 +119,7 @@ window#waybar.empty #window {
 
 #keyboard-state,
 #clock {
-    color: @sapphire;
+	color: @sapphire;
 }
 #network,
 #temperature {
@@ -129,7 +129,7 @@ window#waybar.empty #window {
 #custom-swaync,
 #custom-keybinds,
 #tray {
-    color: aliceblue;
+	color: aliceblue;
 }
 
 #taskbar,
@@ -151,7 +151,7 @@ window#waybar.empty #window {
 }
 
 #custom-cava_mviz{
-    color: @color2;
+	color: @color2;
 }
 #workspaces {
     margin: 1px 1px 1px 1px;
@@ -209,7 +209,7 @@ window#waybar.empty #window {
 
 #pulseaudio-slider,
 #pulseaudio {
-    color: @color13;
+	color: @color13;
 }
 
 #pulseaudio.muted {
@@ -217,19 +217,19 @@ window#waybar.empty #window {
 }
 
 #memory {
-    color: @sapphire;
+	color: @sapphire;
 }
 
 #cpu {
-    color: @mauve;
+	color: @mauve;
 }
 
 #battery {
-    color: @rosewater;
+	color: @rosewater;
 }
 
 #disk {
-    color: @sky;
+	color: @sky;
 }
 
 #temperature.critical {
@@ -244,7 +244,7 @@ window#waybar.empty #window {
 
 #taskbar button.active {
     background-color: rgb(47, 46, 46);
-    border-radius: 30px;
+	border-radius: 30px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
@@ -252,7 +252,7 @@ window#waybar.empty #window {
 #taskbar button:hover {
     padding-left: 3px;
     padding-right: 3px;
-    border-radius: 15px;
+	border-radius: 15px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
@@ -267,43 +267,43 @@ window#waybar.empty #window {
 }
 
 #pulseaudio-slider slider {
-    min-width: 0px;
-    min-height: 0px;
-    opacity: 0;
-    background-image: none;
-    border: none;
-    box-shadow: none;
+	min-width: 0px;
+	min-height: 0px;
+	opacity: 0;
+	background-image: none;
+	border: none;
+	box-shadow: none;
 }
 
 #pulseaudio-slider trough {
-    min-width: 80px;
-    min-height: 5px;
-    border-radius: 5px;
+	min-width: 80px;
+	min-height: 5px;
+	border-radius: 5px;
 }
 
 #pulseaudio-slider highlight {
-    min-height: 10px;
-    border-radius: 5px;
+	min-height: 10px;
+	border-radius: 5px;
 }
 
 #backlight-slider slider {
-    min-width: 0px;
-    min-height: 0px;
-    opacity: 0;
-    background-image: none;
-    border: none;
-    box-shadow: none;
+	min-width: 0px;
+	min-height: 0px;
+	opacity: 0;
+	background-image: none;
+	border: none;
+	box-shadow: none;
 }
 
 #backlight-slider trough {
-    min-width: 80px;
-    min-height: 10px;
-    border-radius: 5px;
+	min-width: 80px;
+	min-height: 10px;
+	border-radius: 5px;
 }
 
 #backlight-slider highlight {
-    min-width: 10px;
-    border-radius: 5px;
+	min-width: 10px;
+	border-radius: 5px;
 }
 
 
